@@ -1,0 +1,647 @@
+/* Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Catamaran", sans-serif;
+    background-color: #ffffff;
+    color: #3a3e3b;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+
+
+    color: #3a3e3b;
+    background-color: #698f3f;
+    border: 2px solid #698f3f;
+    outline: 3px solid #698f3f;
+    outline-offset: 4px;
+}
+
+.btn:hover {
+    background-color: #4b6630;
+    border-color: #4b6630;
+    outline-color: #4b6630;
+    color: #e5e5e5;
+}
+
+/* Phần specially crafted */
+body>.header {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("/Images/nhung-nghi-thuc-trong-tra-dao.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-top: 0;
+}
+
+body>.header h2 {
+    font-family: "Grand Hotel", cursive;
+    color: #008912;
+    font-size: 3rem;
+    margin: 5rem 0 1rem;
+    font-weight: normal;
+}
+
+body>.header h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    letter-spacing: 5px;
+}
+
+/* Phần Made with love */
+#features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 50px 0;
+    gap: 20px;
+}
+
+.feature_item {
+    flex: 1 1 20%;
+    width: 20%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.feature_title {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: calc(0.7rem - 0.2rem);
+    color: #698f3f;
+}
+
+.feature_text {
+    font-size: 1.6rem;
+    color: #3a3e3b;
+}
+
+.feature_item:hover {
+    border-color: #698f3f;
+    background-color: #698f3f;
+}
+
+.feature_item:hover .feature_title {
+    color: #e5e5e5;
+}
+
+/* About Our */
+#about::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.about_left,
+.about_right {
+    width: 50%;
+}
+
+.about_left {
+    float: left;
+    border: 7px solid #698f3f;
+    border-radius: 22px;
+    background-color: #e5e5e5;
+    overflow: hidden;
+}
+
+.about_left img {
+    border-radius: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about_right {
+    float: left;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+#about .heading_first {
+    font-family: "Grand Hotel", cursive;
+    font-size: 2rem;
+    color: #698f3f;
+    letter-spacing: calc(0.7rem * 1.2);
+}
+
+#about .heading_second {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    color: #3a3e3b;
+    margin-bottom: 10px;
+    font-family: "Catamaran", sans-serif;
+}
+
+.about_text {
+    font-size: 1.8rem;
+    font-family: "Catamaran", sans-serif;
+}
+
+.about_content {
+    padding-top: 20px;
+}
+
+/* Check out */
+#product {
+    background-color: #3a3e3b;
+    font-family: "Catamaran", sans-serif;
+    padding: 5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+#product .heading_first {
+    font-family: "Grand Hotel", cursive;
+    color: #698f3f;
+    font-size: 3rem;
+}
+
+#product .heading_second {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 4rem;
+}
+
+.product_item {
+    width: 30%;
+    padding: 3rem 0;
+    border-bottom: 5px solid #698f3f;
+    text-align: center;
+}
+
+#product .btn {
+    color: white;
+}
+
+.product_item img {
+    border: 1px solid #698f3f;
+    border-radius: 22px;
+}
+
+.products__text {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+
+}
+
+.product-item__title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: calc(0.7rem - 0.3rem);
+    margin: 2rem 0;
+}
+
+.product-item__price {
+    font-family: "Grand Hotel", cursive;
+    font-size: 2.6rem;
+    color: #698f3f;
+    font-weight: 700;
+}
+
+.product-item__price span {
+    margin-right: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+/* Explore our services */
+.explore-section {
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.explore-section .title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #34a248;
+    font-family: "Grand Hotel", cursive;
+    letter-spacing: calc(0.7rem + 2px);
+}
+
+.explore-section .after_title {
+    font-size: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.block {
+    float: left;
+    width: 30%;
+    margin: 20px 1.5%;
+    border: 3px solid #ffffff;
+    background-color: #4b6630;
+    padding: 0 0 20px;
+    border-radius: 22px;
+    outline: auto green;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+
+.block img {
+    width: 100%;
+    height: 250px;
+    border-radius: 22px 22px 0 0;
+    margin-bottom: 15px;
+    display: block;
+    object-fit: cover;
+}
+
+.block__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 40px 0 20px;
+
+    color: #ffffff;
+
+}
+
+.block .btn {
+    background-color: #0f3d2e;
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.3rem 0.8rem;
+    outline: 1px solid #ffffff;
+    outline-offset: 0;
+    border-radius: 22px;
+}
+
+.block .btn:hover,
+.block .btn:active {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    outline-color: #0f3d2e;
+    color: #0f3d2e;
+}
+
+/* Address */
+.contact {
+    background: #f1f5f8;
+    display: flex;
+    flex-wrap: wrap;
+    clear: both;
+}
+
+.heading-first {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info,
+.contact-form {
+    width: 50%;
+    padding: 4rem;
+}
+
+.contact-info {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
+
+.contact-item {
+    margin-bottom: 2rem;
+}
+
+.contact-info h3.heading-first {
+    font-family: "Grand Hotel", cursive;
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.8rem;
+    letter-spacing: normal;
+}
+
+.contact-info-text {
+    color: #3a3e3b;
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact-form {
+    background: #ffffff;
+    text-align: center;
+}
+
+.contact-form h3 {
+    color: #617d98;
+    margin-bottom: 2rem;
+}
+
+.form-control {
+    width: 100%;
+    background: #f1f5f8;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-control::placeholder {
+    font-family: "Catamaran", sans-serif;
+    color: #102a42;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+}
+
+.map-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    background-color: #f1f5f8;
+}
+
+.map-embed {
+    width: 80%;
+    max-width: 900px;
+    height: 300px;
+    border: 3px solid #34a248;
+    border-radius: 20px;
+    display: block;
+}
+
+.site-footer {
+    background-color: #000000;
+    color: #ffffff;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 16px;
+}
+
+.footer-title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #34a248;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #3a3e3b;
+    border-color: #3a3e3b;
+    outline-color: #3a3e3b;
+    color: #ffffff;
+}
+
+.menu-icon {
+    font-size: 35px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 4px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+header {
+    position: relative;
+    min-height: 60px;
+}
+
+.menu-icon.is-on-dark {
+    color: #34a248;
+}
+
+/* Slide menu */
+.menuPage {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    z-index: 1200;
+}
+
+.menuPage.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menuPage__panel {
+    background-color: #ffffff;
+    width: min(320px, 80vw);
+    height: 100%;
+    padding: 24px 20px;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    box-shadow: 6px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.menuPage.is-open .menuPage__panel {
+    transform: translateX(0);
+}
+
+.menuPage__close {
+    border: none;
+    background: transparent;
+    font-size: 28px;
+    cursor: pointer;
+    color: #3a3e3b;
+}
+
+.menuPage__list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.menuPage__item {
+    margin: 10px 0;
+}
+
+.menuPage__link {
+    display: block;
+    text-decoration: none;
+    color: #3a3e3b;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 6px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.menuPage__link:hover {
+    background-color: #e5e5e5;
+    color: #4b6630;
+    transform: translateX(6px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    body>.header h2 {
+        font-size: 2.4rem;
+    }
+
+    body>.header h1 {
+        font-size: 3.2rem;
+        letter-spacing: 3px;
+    }
+
+    .feature_item {
+        flex: 1 1 45%;
+        width: 45%;
+    }
+
+    .about_left,
+    .about_right {
+        width: 100%;
+        float: none;
+    }
+
+    .about_right {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .product_item {
+        width: 45%;
+    }
+
+    .block {
+        width: 45%;
+        margin: 20px 2.5%;
+    }
+}
+
+@media (max-width: 768px) {
+    body>.header {
+        padding: 0 20px;
+    }
+
+    body>.header h2 {
+        margin-top: 3rem;
+    }
+
+    body>.header h1 {
+        font-size: 2.6rem;
+    }
+
+    #features {
+        padding: 30px 0;
+    }
+
+    .feature_item {
+        flex: 1 1 100%;
+        width: 100%;
+        margin: 10px 20px;
+    }
+
+    .product_item {
+        width: 80%;
+    }
+
+    .block {
+        width: 80%;
+        margin: 20px auto;
+        float: none;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        padding: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body>.header h2 {
+        font-size: 2rem;
+    }
+
+    body>.header h1 {
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.6rem;
+    }
+
+    .feature_text,
+    .products__text,
+    .about_text,
+    .contact-info-text {
+        font-size: 1.4rem;
+    }
+
+    .product_item {
+        width: 90%;
+    }
+}
